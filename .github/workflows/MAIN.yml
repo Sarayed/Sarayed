@@ -27,6 +27,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git add dist/
           git commit -m "Update contribution graph snake [skip ci]"
+          git pull origin master --rebase
           git push origin HEAD:master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
