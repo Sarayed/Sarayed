@@ -29,4 +29,4 @@
 
 
 
-![snake gif](https://github.com/Sarayed/Sarayed/blob/output/github-contribution-grid-snake.gif)
+![snake gif](https://github.com/Sarayed/Sarayed/master/dist/github-contribution-grid-snake.gif)
