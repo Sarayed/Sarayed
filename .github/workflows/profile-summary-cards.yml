@@ -29,6 +29,8 @@ jobs:
       - name: Generate GitHub profile summary cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         with:
-          username: ${{ secrets.GH_TOKEN }}
-          exclude: languages
-          autoUpdate: true
+          USERNAME: ${{ secrets.GH_TOKEN }}
+          EXCLUDE: languages
+          AUTO_PUSH: true
+          BRANCH_NAME: main
+          UTC_OFFSET: 0
