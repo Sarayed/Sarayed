@@ -31,8 +31,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add dist/
-          git commit -m "Update contribution graph snake [skip ci]"
+          git add .
+          git diff --quiet || git commit -m "Update contribution graph snake [skip ci]"
           git push origin HEAD:master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
