@@ -29,4 +29,4 @@
 
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Sarayed&bg_color=292d3e&color=da5b0b&line=9e4c98&point=89ddff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-![snake gif](https://github.com/Sarayed/Sarayed/master/dist/github-contribution-grid-snake.gif)
+![snake gif](https://github.com/Sarayed/Sarayed/blob/output/github-contribution-grid-snake.gif)
