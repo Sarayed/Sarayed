@@ -29,7 +29,7 @@ jobs:
       - name: Generate GitHub profile summary cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         with:
-          USERNAME: Sarayed  # Use the GitHub actor, which is the repository owner or the user triggering the workflow
+          USERNAME: ${{ github.actor }}  # Use the GitHub actor, which is the repository owner or the user triggering the workflow
           EXCLUDE: languages
           AUTO_PUSH: true
           BRANCH_NAME: main
