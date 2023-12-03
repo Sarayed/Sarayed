@@ -1,36 +1,23 @@
-name: Update GitHub Profile Summary Cards
+name: GitHub-Profile-Summary-Cards
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"
+  create:
+  push:
+  schedule: # execute every 24 hours
+    - cron: "* */24 * * *"
   workflow_dispatch:
 
 jobs:
-  update-profile:
+  build:
     runs-on: ubuntu-latest
-
+    name: generate-github-cards
+    permissions:
+      contents: write
+      
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Set Git Config
-        run: |
-          git config user.email "sarraayed124@gmail.com"
-          git config user.name "Sarayed"
-
-      - name: Generate GitHub profile summary cards
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        with:
-          USERNAME: ${{ github.actor }}  # Use the GitHub actor, which is the repository owner or the user triggering the workflow
-          EXCLUDE: languages
-          AUTO_PUSH: true
-          BRANCH_NAME: main
-          UTC_OFFSET: 0
+          USERNAME: ${{ github.repository_owner }}
