@@ -34,3 +34,5 @@ jobs:
           AUTO_PUSH: true
           BRANCH_NAME: main
           UTC_OFFSET: 0
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
