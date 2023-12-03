@@ -26,10 +26,15 @@ jobs:
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
-      - name: Show build status
+      - name: Show build status after snake generation
         run: git status
 
+      - name: Check for changes
+        id: check-changes
+        run: echo ::set-output name=changes::$(git diff --name-only)
+
       - name: Commit and push changes
+        if: steps.check-changes.outputs.changes != ''
         run: |
           git add dist/
           git commit -m "Update contribution graph snake [skip ci]"
