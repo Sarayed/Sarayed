@@ -29,7 +29,7 @@ jobs:
       - name: Generate GitHub profile summary cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         with:
-          USERNAME: ${{ secrets.GH_TOKEN }}
+          USERNAME: Sarayed
           EXCLUDE: languages
           AUTO_PUSH: true
           BRANCH_NAME: main
