@@ -1,6 +1,6 @@
 <div align="center"> <img src="https://github.com/Sarayed/Sarayed/blob/Sarayed-patch-1/Banner.png"> </div>
 <h1 align="center">Hi 👋, I'm Sarra</h1>
-<h3 align="center">As a data science apprentice, I strive to unravel the mysteries of complex data sets and extract valuable knowledge from them</h3>
+<h3 align="">As a data science apprentice, I strive to unravel the mysteries of complex data sets and extract valuable knowledge from them</h3>
 <img align="right" alt="Coding" width="400" src="https://i.pinimg.com/originals/29/12/98/29129842108c46684a26c427741db074.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sarayed&label=Profile%20views&color=0e75b6&style=flat" alt="sarayed" /> </p>
